@@ -3,6 +3,12 @@
   "description": "Add kyo-no-esa button in the sidebar of esa.io that opens or create today's diary",
   "version": "0.0.1",
   "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*.esa.io/*"],
+      "js": ["content-script.js"]
+    }
+  ],
   "action": {
     "default_popup": "index.html"
   }
