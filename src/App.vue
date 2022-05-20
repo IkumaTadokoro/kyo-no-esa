@@ -2,7 +2,7 @@
 import { Configuration, EsaApi } from "../client"
 import { ref } from 'vue'
 
-const diaryUrl = ref({});
+const diaryUrl = ref('');
 
 const getToday = () => {
   const date = new Date()
