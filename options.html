@@ -8,8 +8,26 @@
     <title>今日のesa | オプション設定</title>
 </head>
 <body>
-    <label for="accessToken">esaのAccessTokenを入力してください。</label>
-    <input type="text" id="accessToken">
+    <div class="form">
+        <label for="accessToken">esaのAccessTokenを入力してください。</label>
+        <input type="text" id="accessToken" placeholder="6ygGa430KiYG1feSK1x180...">
+    </div>
+
+    <div class="form">
+        <label for="teamName">esaのチーム名を入力してください。</label>
+        <input type="text" id="teamName" placeholder="esa-team">
+    </div>
+
+    <div class="form">
+        <label for="diaryCategory">日報のカテゴリを入力してください。</label>
+        <input type="text" id="diaryCategory" placeholder="Diary">
+    </div>
+
+    <div class="form">
+        <!-- TODO: テンプレートはesaからapiで取得するようにする  -->
+        <label for="templateId">日報テンプレートの記事IDを指定してください。</label>
+        <input type="text" id="templateId" placeholder="79">
+    </div>
 
     <div id="status"></div>
     <button id="save">Save</button>
