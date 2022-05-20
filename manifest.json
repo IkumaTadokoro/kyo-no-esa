@@ -9,6 +9,10 @@
       "js": ["content-script.js"]
     }
   ],
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ],
   "action": {
     "default_popup": "index.html"
   }
