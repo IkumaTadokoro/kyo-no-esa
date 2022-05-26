@@ -6,51 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>今日のesa | オプション設定</title>
-
-    <style>
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-        .form {
-            margin: 8px 0;
-            font-size: 16px;
-        }
-
-        .form input {
-            width: 100%;
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <h1>今日のesa オプション設定</h1>
-        <div class="form">
-            <label for="accessToken">esaのAccessTokenを入力してください。</label>
-            <input type="text" id="accessToken" placeholder="6ygGa430KiYG1feSK1x180...">
-        </div>
-
-        <div class="form">
-            <label for="teamName">esaのチーム名を入力してください。</label>
-            <input type="text" id="teamName" placeholder="esa-team">
-        </div>
-
-        <div class="form">
-            <label for="diaryCategory">日報のカテゴリを入力してください。</label>
-            <input type="text" id="diaryCategory" placeholder="Diary">
-        </div>
-
-        <div class="form">
-            <!-- TODO: テンプレートはesaからapiで取得するようにする  -->
-            <label for="templateId">日報テンプレートの記事IDを指定してください。</label>
-            <input type="text" id="templateId" placeholder="79">
-        </div>
-
-        <div id="status"></div>
-        <button id="save">Save</button>
-    </div>
-
-    <script src="options.js"></script>
+<body class="bg-gray-100 text-gray-600">
+    <div id="root"></div>
+    <script type="module" src="/src/options.ts"></script>
 </body>
 </html>
