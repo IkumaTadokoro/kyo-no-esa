@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["https://*.esa.io/*"],
-      "js": ["content-script.js"]
+      "js": ["content-script.ts"]
     }
   ],
   "options_page": "options.html",
