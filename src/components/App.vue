@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Configuration, EsaApi } from "../client"
+import { Configuration, EsaApi } from "../../client"
 import { ref } from 'vue'
 
 const diaryUrl = ref('');
